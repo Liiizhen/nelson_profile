@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  ::selection {
+    background: rgb(59 130 246 / 0.25);
+    color: inherit;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(113 113 122 / 0.35);
+    border-radius: 100px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(113 113 122 / 0.6);
+  }
+}
+
+/* Subtle dot-grid background for hero */
+.hero-dots {
+  background-image: radial-gradient(
+    circle,
+    rgb(161 161 170 / 0.25) 1px,
+    transparent 1px
+  );
+  background-size: 28px 28px;
+}
+
+.dark .hero-dots {
+  background-image: radial-gradient(
+    circle,
+    rgb(255 255 255 / 0.05) 1px,
+    transparent 1px
+  );
+  background-size: 28px 28px;
+}
