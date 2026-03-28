@@ -126,7 +126,7 @@ export function Hero() {
             {/* Photo */}
             <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-white dark:border-zinc-900 shadow-xl shadow-zinc-900/10 dark:shadow-black/40">
               <Image
-                src="/pics/portrait.png"
+                src="/pics/portrait.jpg"
                 alt="Nelson Tian"
                 fill
                 className="object-cover"
